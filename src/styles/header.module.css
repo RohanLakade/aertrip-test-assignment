@@ -1,0 +1,120 @@
+/* top header */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.top-header {
+  color: #fff;
+  background: linear-gradient(to right, var(--btnTxt), var(--aertripColor));
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px 0 11px;
+}
+
+/* top header left section */
+
+.top-header .left-sec .logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* top header middle section */
+
+.top-header .middle-sec ul {
+  display: flex;
+  gap: 6px;
+}
+
+.top-header .middle-sec ul li button {
+  padding: 8px 32px;
+  border-radius: 21px;
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  height: 40px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.top-header .middle-sec ul li button .label .text, .logo {
+  display: block;
+  height: 40px;
+}
+
+.top-header .middle-sec ul li button .label .logo img {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.top-header .middle-sec ul li button:hover .label .text,
+.top-header .middle-sec ul li button:hover .label .logo {
+  transform: translateY(-110%);
+}
+
+.top-header .middle-sec ul li button:hover {
+  background-color: var(--aertripLightColor) !important;
+}
+
+.top-header .middle-sec ul li button.selected {
+  background-color: var(--aertripColor-05);
+}
+
+/* top header right section */
+
+.top-header .right-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-header .right-sec .theme-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-header .right-sec .theme-btn button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.top-header .right-sec .theme-btn button:hover {
+  backdrop-filter: saturate(180%) blur(20px);
+  border-radius: 50%;
+}
+
+.top-header .right-sec .theme-btn .responsive-icons {
+  display: none;
+}
+
+.top-header .right-sec .login-btn button {
+  cursor: pointer;
+  border-radius: 21px;
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 33px;
+  text-transform: uppercase;
+  margin-left: 28px;
+  height: 40px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.top-header .right-sec .login-btn button:hover {
+  background-color: var(--aertripColor-05);
+}

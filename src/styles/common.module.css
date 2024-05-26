@@ -1,0 +1,142 @@
+/* common custom drop down */
+.custom-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-dropdown .dropdown-value {
+  padding: 8px 32px 8px 0;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-dropdown .dropdown-value:hover {
+  color: var(--aertripColor);
+}
+
+.custom-dropdown .dropdown-options {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  margin: 8px 32px 8px 0;
+  outline: 1px solid green;
+  z-index: 9999;
+  border-radius: 10px;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.5);
+  outline: none;
+  background: #fff;
+}
+
+.custom-dropdown .dropdown-options.medium {
+  width: 242px;
+}
+
+.custom-dropdown .dropdown-options.active {
+  display: block;
+}
+
+.custom-dropdown .dropdown-options ul li {
+  display: flex;
+  padding: 10px 16px;
+}
+
+.custom-dropdown .dropdown-options ul li.active {
+  background-color: var(--aertripColor-02) !important;
+}
+
+.custom-dropdown .dropdown-options ul li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.custom-dropdown .dropdown-value .icon,
+.custom-dropdown .dropdown-options ul li .icon {
+  margin-right: 10px;
+}
+
+.custom-dropdown .dropdown-value .dropdown-arrow,
+.custom-dropdown .dropdown-value .reverse-arrow {
+  margin-left: 10px;
+}
+
+
+.custom-dropdown .dropdown-value .reverse-arrow {
+  transform: rotate(180deg);
+}
+
+.custom-dropdown .dropdown-options .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 16px;
+}
+
+.custom-dropdown .dropdown-options .header .close-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-dropdown .dropdown-options .header .clear-btn {
+  color: var(--aertripColor);
+  border-radius: 5px;
+  padding: 8px 8px;
+  border-radius: 5px;
+}
+
+.custom-dropdown .dropdown-options .header .clear-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.custom-dropdown .dropdown-options .header .close-icon {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  padding: 4px;
+}
+
+.custom-dropdown .dropdown-options .header .close-icon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* ----- sort dropdown ----------- */
+.custom-sort-dropdown .dropdown-options ul li .info {
+  display: flex;
+  align-items: center;
+}
+
+.custom-sort-dropdown .dropdown-options ul li .info span img {
+  color: var(--aertripColor);
+}
+
+.custom-sort-dropdown .dropdown-options .refundable-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.custom-sort-dropdown .dropdown-options .refundable-price label {
+  padding: 20px;
+}
+
+.custom-sort-dropdown .dropdown-options .price-option .price-range {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0 10px;
+}
+
+
+/* -------------- search-dropdown ----- */
+
+.custom-search-dropdown .dropdown-options .input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

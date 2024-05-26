@@ -1,0 +1,81 @@
+.searchbar-wrapper {
+  padding: 16px 5%;
+  margin: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.searchbar-wrapper .passengers-booking-filters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchbar-wrapper .passengers-booking-filters .dropdown-filters-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* .searchbar-wrapper .passengers-booking-filters .recent-searches .custom-dropdown {
+  padding: 8px 0px 8px 12px;
+} */
+
+/* passenger dropdown counter */
+
+.searchbar-wrapper .custom-dropdown .dropdown-options.large {
+  width: 375px;
+}
+
+.searchbar-wrapper .custom-dropdown .dropdown-options ul li .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchbar-wrapper .custom-dropdown .dropdown-options ul li .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  gap: 4px;
+}
+
+.searchbar-wrapper .custom-dropdown .dropdown-options ul li .count .number {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.searchbar-wrapper .custom-dropdown .dropdown-options ul .alert-message {
+  color: var(--orange);
+  padding: 12px 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.searchbar-wrapper .custom-dropdown .dropdown-options ul .error-message {
+  color: var(--red);
+  padding: 12px 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.searchbar-wrapper .search-flight-details {
+  display: flex;
+  /* height: 54px; */
+  /* padding: 16px; */
+  flex-wrap: nowrap;
+}
+
+.searchbar-wrapper .search-flight-input-group {
+  display: flex; 
+  padding: 5px 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.searchbar-wrapper .search-flight-input-group label{
+  display: block;
+}

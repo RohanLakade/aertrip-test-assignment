@@ -1,0 +1,204 @@
+:root {
+  --btnTxt: #00a3aa;
+  --aertripColor: #00e4a4;
+  --aertripLightColor: rgb(0, 255, 208);
+  --aertripColor-02: rgba(0, 255, 208, 20%);
+  --aertripColor-05: rgba(0, 255, 208, 50%);
+  --red: #fb0000;
+  --teal: teal;
+  --orange: rgb(255, 137, 0);
+  --primary-color: #333;
+  --secondary-color: #fff;
+  --font-color: #333;
+  --bg-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  font-family: "Source sans pro", sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+
+/* ---------------- price raange slider ------------ */
+
+.slider-container {
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.range-slider {
+  width: 100%;
+  position: relative;
+}
+
+.range-slider input {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  position: absolute;
+}
+
+.range-slider input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-slider input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.range-slider input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-slider .track {
+  position: absolute;
+  height: 8px;
+  background: #007bff;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.price-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.price-labels span {
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------- search dropdown --------------- */
+
+/* .container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+} */
+
+/* ------------- calender ---------------------- */
